@@ -25,14 +25,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button buttonNavigate = findViewById(R.id.viewMore);
-//        buttonNavigate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, avl_prof.class);
-//                setIntent(intent);
-//            }
-//        });
-
     }
 }
