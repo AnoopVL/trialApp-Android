@@ -19,7 +19,7 @@ public class contactMe extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(contactMe.this, "Submitted !!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(contactMe.this, "Submitted !!ls", Toast.LENGTH_SHORT).show();
             }
         });
 
