@@ -27,29 +27,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                     //Directly opens the website in relative app
+//                Intent intent = new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse("https://www.google.com/"));
+//                startActivity(intent);
+//      chatGpt
+                String url = "https://www.instagram.com/anoop_lanjekar/";
+                Uri uri = Uri.parse(url);
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://www.instagram.com/anoop_lanjekar/"));
-                startActivity(intent);
 
-//                String url = "https://www.instagram.com/anoop_lanjekar";
-//                Uri uri = Uri.parse(url);
-//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-//
-//// Check if there's a web browser available to handle the intent
-//                if (intent.resolveActivity(getPackageManager()) != null) {
-//                    startActivity(intent);
-//                } else {
-//                    // Handle the case where no web browser is available
-//                    Toast.makeText(MainActivity.this, "Now web browser found", Toast.LENGTH_SHORT).show();
-//                }
-
-//                String url = "https://www.instagram.com/anoop_lanjekar/";
-//                    Uri webpage = Uri.parse(url);
-//                    Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-//                    if (intent.resolveActivity(getPackageManager()) != null) {
-//                        startActivity(intent);
-//                    }
-
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                } else {
+                    // Handle the case where no web browser is available
+                    Toast.makeText(MainActivity.this, "Now web browser found", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
