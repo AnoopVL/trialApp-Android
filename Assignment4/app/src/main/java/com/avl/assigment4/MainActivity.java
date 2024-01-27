@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 //      chatGpt
                 String url = "https://www.instagram.com/anoop_lanjekar/";
                 Uri uri = Uri.parse(url);
-                Intent intent = new Intent(Intent.ACTION_VIEW);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
                     // Handle the case where no web browser is available
                     Toast.makeText(MainActivity.this, "Now web browser found", Toast.LENGTH_SHORT).show();
                 }
+//      android docs
+//                Uri webpage = Uri.parse(url);
+//                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+//                if (intent.resolveActivity(getPackageManager()) != null) {
+//                    startActivity(intent);
+//                }
             }
         });
     }
