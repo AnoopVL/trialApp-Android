@@ -6,18 +6,129 @@
     android:layout_height="match_parent"
     tools:context=".quiz">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-        <TextView
-            android:id="@+id/pro_qz"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Programing Quiz" />
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/pro_qz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="30dp"
+                android:text="Programing Quiz"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/que1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/q1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="a" />
+
+                <Button
+                    android:id="@+id/q1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="b" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/que2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/q2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="a" />
+
+                <Button
+                    android:id="@+id/q2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="b" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/que3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/q3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="a" />
+
+                <Button
+                    android:id="@+id/q3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="b" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/que4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/q4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="a" />
+
+                <Button
+                    android:id="@+id/q4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="b" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
